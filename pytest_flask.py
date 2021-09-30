@@ -23,3 +23,8 @@ def test_greeting_hello(client):
 def test_greeting_unchi(client):
   result = client.get('/greeting/unchi')
   assert b'buriburi' == result.data
+
+
+def test_flask(client):
+  result = client.get('/top')
+  assert b'h1' in result.data
