@@ -7,4 +7,6 @@ app = Flask(__name__)
 def sample(message):
   if message == 'bye':
     message = 'see you'
+  elif message == 'unchi':
+    message = 'buriburi'
   return message

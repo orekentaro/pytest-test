@@ -18,3 +18,8 @@ def test_greeting_bye(client):
 def test_greeting_hello(client):
   result = client.get('/greeting/hello')
   assert b'hello' == result.data
+
+
+def test_greeting_unchi(client):
+  result = client.get('/greeting/unchi')
+  assert b'buriburi' == result.data
